@@ -36,4 +36,4 @@ Luckily, we _do_ know a public API about this topic, called [PUNK API](https://p
 Using the data from the provided API, we need the Web app to:
 
 * Display a list of 10 beers with their ibu and ph. No sorting criteria needed.
-* Display a button to show a custom error.
+* Display a button to show a custom error. To do that, make an API call to an unexisting endpoint, catch the error and show your custom message.
