@@ -8,7 +8,7 @@ class Button extends React.Component {
       let beers = await fetch('https://api.punkapiiii.com/v2/beers')
     } catch(error) {
       this.setState({
-        error : 'We dont have any more beer'
+        error : 'We dont have any more beer!'
       })
     }
   }
@@ -18,7 +18,7 @@ class Button extends React.Component {
       <div>
         <button onClick={this.handleClick}>I want a beer!</button>
         <br/>
-        <span style={{color : 'red', fontSize: '18px'}}>{this.state.error}</span>
+        <span>{this.state.error}</span>
       </div>
     )
   }
